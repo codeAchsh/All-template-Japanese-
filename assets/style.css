@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  background-color: #fffaf6;
+  color: #333;
+  line-height: 1.6;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* タイトルセクション */
+.template-title {
+  text-align: center;
+  font-size: 2em;
+  color: #d97d54;
+  margin-bottom: 0.5em;
+}
+
+.template-intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2em;
+}
+
+/* テンプレートカードのレイアウト */
+.template-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.template-card {
+  background-color: #fffdfb;
+  border: 1px solid #ffd8c2;
+  border-radius: 1em;
+  padding: 1.5em;
+  transition: box-shadow 0.3s ease;
+}
+
+.template-card:hover {
+  box-shadow: 0 4px 12px rgba(216, 122, 81, 0.2);
+}
+
+.template-card h3 {
+  font-size: 1.4em;
+  color: #d9534f;
+  margin-bottom: 0.5em;
+}
+
+.template-card p {
+  margin-top: 0.5em;
+  color: #444;
+  font-size: 1em;
+}
+
+/* 価格表示 */
+.price {
+  margin-top: 1em;
+  font-weight: bold;
+  color: #555;
+}
+
+/* リンクボタン */
+.template-links {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.template-links a {
+  display: inline-block;
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  font-size: 0.95em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* デモボタン */
+.template-links .demo {
+  background-color: #fff0e5;
+  color: #cc5e00;
+  border: 1px solid #ffd2b3;
+}
+
+.template-links .demo:hover {
+  background-color: #ffe8d5;
+}
+
+/* 購入ボタン */
+.template-links .buy {
+  background-color: #ffdee2;
+  color: #c94a61;
+  border: 1px solid #ffcdd2;
+}
+
+.template-links .buy:hover {
+  background-color: #ffc9d1;
+}
+
+/* NEWバッジ */
+.new-badge {
+  background-color: #ff7e7e;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 0.2em 0.6em;
+  border-radius: 5px;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+
+/* 最新カードの強調 */
+.template-card.latest {
+  border: 2px solid #ffbebe;
+  background-color: #fff0f0;
+  box-shadow: 0 4px 12px rgba(255, 150, 150, 0.3);
+  animation: popIn 0.8s ease-in-out;
+}
+
+/* アニメーション */
+@keyframes popIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .template-card {
+    padding: 1.2em;
+  }
+
+  .template-card h3 {
+    font-size: 1.2em;
+  }
+
+  .template-links a {
+    font-size: 0.9em;
+    padding: 0.5em 0.8em;
+  }
+}
