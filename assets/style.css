@@ -127,6 +127,77 @@ body {
   animation: popIn 0.8s ease-in-out;
 }
 
+.ad-area {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 16px 20px;
+  background-color: #fff7fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.site-footer {
+  background-color: #fdf4f8;
+  padding: 24px 16px;
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid #e9cddf;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.footer-banner {
+  display: inline-block;
+  background-color: #ffeef4;
+  color: #cc4c80;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.footer-banner:hover {
+  background-color: #ffd9e8;
+  color: #a03b66;
+  transform: translateY(-2px);
+}
+
+.footer-banner.github {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.footer-banner.github:hover {
+  background-color: #e4edf5;
+  color: #000;
+}
+
+.footer-banner.calc {
+  background-color: #f1fdfc;
+  color: #007a87;
+}
+
+.footer-banner.calc:hover {
+  background-color: #ccf0ed;
+  color: #005b67;
+}
+
+.footer-banner.note:hover {
+  text-decoration: underline;
+}
+
+
+
 /* アニメーション */
 @keyframes popIn {
   0% {
@@ -152,5 +223,8 @@ body {
   .template-links a {
     font-size: 0.9em;
     padding: 0.5em 0.8em;
+  }
+    .footer-links {
+    gap: 10px;
   }
 }
