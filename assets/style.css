@@ -22,6 +22,7 @@ body {
   font-size: 2em;
   color: #d97d54;
   margin-bottom: 0.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .template-intro {
@@ -126,6 +127,25 @@ body {
   box-shadow: 0 4px 12px rgba(255, 150, 150, 0.3);
   animation: popIn 0.8s ease-in-out;
 }
+.my-area{
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 16px 20px;
+  background-color: #fccbdd;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.my-area:hover{
+  background-color: #ccf0ed;
+}
+.my-area a{
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+
 
 .ad-area {
   max-width: 800px;
@@ -224,7 +244,10 @@ body {
     font-size: 0.9em;
     padding: 0.5em 0.8em;
   }
+  .ad-area a{
+    font-size: 15px;
+  }
     .footer-links {
-    gap: 10px;
+    gap: 6px;
   }
 }
